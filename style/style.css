@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+*{
+   margin: 0;
+   padding: 0; 
+   box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    background-color: #19a1ad;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+main{
+    background-color: white;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 14px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4.8em;
+    text-align: center;
+}
+
+.imgs-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgs-container img:nth-child(2){
+    width: 100px;
+    position: absolute;
+    border-radius: 100%;
+    margin-top: 5.6em;
+    border: 6px solid white
+}
+
+.name_card{
+    padding-bottom: 10px;
+}
+
+.descrption-card h2{
+    color: #353541;
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 0.6em;
+}
+
+.descrption-card p,
+.descrption-card span:nth-child(1){
+    color: #84848d;
+    font-weight: 400;
+    padding-bottom: 2px;
+}
+
+.footer{
+    background-color: #e9e9e9;
+    text-align: center;
+    padding: 1px;
+    margin: 0px 25px 0px;
+}
+
+.list-view{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 3em;
+}
+
+.list-view li{
+    padding: 1.5em 0;
+    list-style: none;
+}
+
+.list-view h3{
+    color: #292c39;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.list-view span{
+    color: #84848d;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.img-1{
+    position: absolute;
+    left: -10%;
+    top: -49%;
+    margin: 0;
+    padding: 0;
+    rotate: -25deg;
+}
+
+.img-2{
+    position: relative;
+    padding-top: 28%;
+    left: 49%;
+    rotate: -25deg;
+}
+
+@media screen and (max-width: 1459px){
+    .img-1,
+    .img-2{
+        display: none;
+    }
+}
